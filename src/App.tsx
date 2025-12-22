@@ -50,10 +50,10 @@ function App() {
   }, []);
 
   return (
-    <div className="h-screen w-full border-3  flex gap-16 bg-black justify-center  overflow-x-hidden overflow-y-hidden">
+    <div className="h-screen w-full border-3 border-cyan-300  flex sm:gap-16 bg-black justify-center  overflow-x-hidden overflow-y-hidden">
       {/* Hours */}
 
-      <div className="flex gap-8  justify-center transition-all duration-500 ease-out will-change-transform relative">
+      <div className="flex sm:gap-8  justify-center transition-all duration-500 ease-out will-change-transform relative">
         <TimeUnit
           size={2}
           current={timeArray[0]}
@@ -64,7 +64,7 @@ function App() {
         />
       </div>
       {/* Minutes */}
-      <div className="flex gap-8  justify-center transition-all duration-500 ease-out will-change-transform relative">
+      <div className="flex sm:gap-8  justify-center transition-all duration-500 ease-out will-change-transform relative">
         <TimeUnit
           size={5}
           current={timeArray[2]}
@@ -75,7 +75,7 @@ function App() {
         />
       </div>
       {/*Seconds*/}
-      <div className="flex gap-8  justify-center transition-all duration-500 ease-out will-change-transform relative">
+      <div className="flex sm:gap-8  justify-center transition-all duration-500 ease-out will-change-transform relative">
         <TimeUnit
           size={5}
           current={timeArray[4]}
