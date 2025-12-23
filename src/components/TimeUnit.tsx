@@ -26,7 +26,7 @@ function TimeUnit({ size, current }: { size: number; current: number }) {
   },[])
 
   useEffect(()=>{
-    console.log("effect second");
+
     if(isMobile){
       setOffeset((300-current*40));
     }else{

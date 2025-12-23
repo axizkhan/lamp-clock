@@ -1,0 +1,60 @@
+<svg width="220" height="260" viewBox="0 0 220 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gold glow -->
+    <filter id="goldGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feColorMatrix type="matrix"
+        values="1 0 0 0 0
+                1 0 0 0 0
+                0 0 0 0 0
+                0 0 0 1 0"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Chain loop -->
+  <ellipse cx="110" cy="20" rx="14" ry="10" fill="none" stroke="#C9A227" stroke-width="4"/>
+
+  <!-- Crown -->
+  <rect x="95" y="30" width="30" height="14" rx="4" fill="#C9A227"/>
+
+  <!-- Outer case -->
+  <circle cx="110" cy="140" r="90" fill="#3a2f1c" stroke="#FFD700" stroke-width="6" filter="url(#goldGlow)"/>
+
+  <!-- Inner bezel -->
+  <circle cx="110" cy="140" r="78" fill="#1a1a1a" stroke="#C9A227" stroke-width="3"/>
+
+  <!-- Watch face -->
+  <circle cx="110" cy="140" r="70" fill="#111"/>
+
+  <!-- Hour markers -->
+  <g stroke="#FFD700" stroke-width="3">
+    <line x1="110" y1="78" x2="110" y2="90"/>
+    <line x1="110" y1="190" x2="110" y2="202"/>
+    <line x1="48" y1="140" x2="60" y2="140"/>
+    <line x1="160" y1="140" x2="172" y2="140"/>
+  </g>
+
+  <!-- Minute markers -->
+  <g stroke="#FFD700" stroke-width="1.5">
+    <line x1="110" y1="84" x2="110" y2="92" transform="rotate(30 110 140)"/>
+    <line x1="110" y1="84" x2="110" y2="92" transform="rotate(60 110 140)"/>
+    <line x1="110" y1="84" x2="110" y2="92" transform="rotate(120 110 140)"/>
+    <line x1="110" y1="84" x2="110" y2="92" transform="rotate(150 110 140)"/>
+  </g>
+
+  <!-- Hour hand -->
+  <line x1="110" y1="140" x2="110" y2="110"
+        stroke="#FFD700" stroke-width="5" transform="rotate(40 110 140)"/>
+
+  <!-- Minute hand -->
+  <line x1="110" y1="140" x2="110" y2="95"
+        stroke="#FFD700" stroke-width="3" transform="rotate(140 110 140)"/>
+
+  <!-- Center pin -->
+  <circle cx="110" cy="140" r="4" fill="#FFD700"/>
+
+</svg>

@@ -22,7 +22,7 @@ function App() {
       .map((ele) => ele.split("").map((ele) => +ele))
       .flat(2);
 
-    console.log(timeArray);
+  
 
     setTimeArray(timeArray);
 
